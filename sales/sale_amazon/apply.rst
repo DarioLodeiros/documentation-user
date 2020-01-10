@@ -68,14 +68,14 @@ application for Amazon MWS keys <amazon/developer-form>`, you may disregard this
   describe how your organization shares this information.**
 
   ► If you do not share Amazon Information with outside parties:
-    Odoo does not share any information with outside parties.
+    Our organization does not share any information with outside parties.
 
   ► If you share Amazon Information with outside parties:
     [Description of your organization's policy regarding Amazon Information]
 
 - **List all non-Amazon MWS sources where you retrieve Amazon Information.**
 
-  Odoo only relies on MWS to retrieve Amazon Information.
+  Our enterprise software only relies on MWS to retrieve Amazon Information.
 
 - **Describe how your organization restricts public access to databases, file servers, and
   desktop/developer endpoints.**
@@ -83,7 +83,7 @@ application for Amazon MWS keys <amazon/developer-form>`, you may disregard this
   | - Access to the postgreSQL database through the network is disabled and standard ports are
   |   closed. The database is only accessible through a socket on the server itself.
   | - The reverse proxy only serves whitelisted directories that are only from sources controlled by
-  |   Odoo S.A.
+  |   Odoo S.A., our SaaS/PaaS provider.
   | - API endpoints are password protected (PBKDF2 & SHA512 encryption, salted, and stretched for
   |   thousands of rounds).
   | - Login credentials are always transmitted securely over HTTPS.
@@ -109,8 +109,8 @@ application for Amazon MWS keys <amazon/developer-form>`, you may disregard this
 - **Describe how your organization prevents Amazon Information from being accessed from employee
   personal devices.**
 
-  Odoo does not prevent employees from accessing the organization's data from personal devices.
-  Role-based restrictions and access rights still apply.
+  Our enterprise software does not prevent employees from accessing the organization's data from
+  personal devices. Role-based restrictions and access rights still apply.
 
 - **Provide details on your organization's privacy and data handling policies (a link to your policy
   is also acceptable).**
@@ -128,17 +128,17 @@ application for Amazon MWS keys <amazon/developer-form>`, you may disregard this
   you encrypt this information (e.g., algorithm).**
 
   The entire database is backed up once a day and backups are kept for a minimum of three months
-  according to the `Odoo Online SLA <https://www.odoo.com/cloud-sla>`_. Backups are hosted on
-  several remote servers as unencrypted database dumps; these backups can only be retrieved by
-  Odoo S.A. employees through support requests.
+  according to our `SaaS/PaaS provider (Odoo S.A.) SLA <https://www.odoo.com/cloud-sla>`_. Backups
+  are hosted on several remote servers as unencrypted database dumps; these backups can only be
+  retrieved by Odoo S.A. employees through support requests.
 
 - **Describe where your organization monitors and detects malicious activity in your
   application(s).**
 
-  Odoo Online uses automated probes on our server that report their status in Munin, an opensource
-  monitoring tool. This tool automatically triggers alarms when probes detect values outside of
-  their pre-defined range. We monitor (among many other things) access rates, response times, ssh
-  connections, network activity.
+  Our SaaS/PaaS provider uses automated probes on our server that report their status in Munin, an
+  opensource monitoring tool. This tool automatically triggers alarms when probes detect values
+  outside of their pre-defined range. We monitor (among many other things) access rates, response
+  times, ssh connections, network activity.
 
 - **Describe how your organization's incident response plan addresses database hacks, unauthorized
   access, and data leaks (a link to your policy is also acceptable).**
